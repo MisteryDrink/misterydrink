@@ -79,7 +79,7 @@ html, body {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
-    ), url(imagenes/fondoa.jpeg);
+    ), url(    fondoa.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
