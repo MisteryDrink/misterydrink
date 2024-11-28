@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabaja con Nosotros - Mistery Drink</title>
+    <link rel="stylesheet" href="trabajo.css"> <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Iconos -->
+</head>
+<body>
+    <header class="header2">
+        <a href="index.html" class="logo" style="color: white;">MisteryDrink</a>
+        <div class="menu">
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="menu-icono">
+                <img src="imagenes/menu.png" alt="Ícono de menú" class="menu-icono">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="menu.html">Bebidas</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </nav>            
+        </div>
+
+        <div class="header-content">
+            <h1>ÚNETE A NUESTRO EQUIPO</h1>
+            <p>En Mistery Drink, siempre estamos buscando personas apasionadas y motivadas para unirse a nuestro equipo.</p>
+            </div>
+
+    </header>
+
+    <section id="introduccion">
+        <h2>¿Por qué trabajar con nosotros?</h2>
+        <p>Trabajar en Mistery Drink significa ser parte de una marca innovadora... ¡Si crees que encajas en nuestro equipo, nos encantaría conocerte!</p>
+    </section>
+
+    <section id="ofertas">
+        <h2>Posiciones Disponibles</h2>
+        <ul>
+            <li>
+                <strong>Gerente de Marketing:</strong> Responsable de campañas publicitarias, análisis de mercado... 
+                <a href="javascript:void(0);" class="toggle-info">Más información</a>
+                <div class="more-info" style="display:none;">
+                    <p>El Gerente de Marketing será responsable de crear y ejecutar estrategias de marketing, supervisar las campañas publicitarias y análisis de mercado.</p>
+                    <ul>
+                        <li>Requisitos: Experiencia en marketing digital, análisis de datos.</li>
+                        <li>Beneficios: Seguro médico, horarios flexibles.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Desarrollador de Producto:</strong> Crear nuevas bebidas innovadoras, supervisar el proceso de producción... 
+                <a href="javascript:void(0);" class="toggle-info">Más información</a>
+                <div class="more-info" style="display:none;">
+                    <p>El Desarrollador de Producto se encargará de la creación de nuevas bebidas, investigación de tendencias y supervisión de la producción.</p>
+                    <ul>
+                        <li>Requisitos: Título en ingeniería química o afines, creatividad.</li>
+                        <li>Beneficios: Descuentos en productos, trabajo en un ambiente dinámico.</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="formulario">
+        <h2>Postúlate Ahora</h2>
+        <form action="enviar_solicitud.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="puesto">Puesto de Interés:</label>
+            <input type="text" id="puesto" name="puesto" required>
+
+            <label for="cv">Curriculum Vitae:</label>
+            <input type="file" id="cv" name="cv" required>
+
+            <label for="motivacion">Carta de Motivación (Opcional):</label>
+            <textarea id="motivacion" name="motivacion"></textarea>
+
+            <label for="comentarios">¿Por qué quieres trabajar con nosotros?</label>
+            <textarea id="comentarios" name="comentarios" required></textarea>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros empleados</h2>
+        <blockquote>
+            <p>"Trabajar en Mistery Drink ha sido una experiencia increíble. La creatividad y el trabajo en equipo son el núcleo de nuestra empresa."</p>
+            <footer>- Juan Pérez, Gerente de Marketing</footer>
+        </blockquote>
+    </section>
+
+    <section id="valores">
+        <h2>Nuestra Cultura</h2>
+        <p>Nos apasiona la innovación y creemos en el trabajo en equipo. Valoramos la sostenibilidad y nos comprometemos con el desarrollo de nuestros empleados.</p>
+    </section>
+
+    <nav class="navbar-custom">
+        <div class="navbar-container">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Trabajo.html">Trabaja con nosotros</a></li>
+                            <li><a href="Historia.html">Historia de MisteryDrink</a></li>
+                            <li><a href="Mapa.html">Mapa del sitio</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Atención al cliente <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="contactanos.html">Contáctanos</a></li>
+                            <li><a href="Facturas.html">Facturas Electrónicas</a></li>
+                            <li><a href="Formasdecomprar.html">Formas de comprar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Secciones legales e informativas <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Accesibilidad.html">Accesibilidad Web</a></li>
+                            <li><a href="Aviso.html">Aviso de Privacidad</a></li>
+                            <li><a href="Condicion.html">Condiciones de uso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ayuda">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    <div class="social-icon-wrapper">
+        <a href="https://www.facebook.com/share/12DMh3Wc31R/" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=misteryatenccion@gmail.com&su=atencion al cliente&body=Esto%20es%20una%20prueba" target="_blank" class="social-icon">
+            <i class="fab fa-google"></i>
+        </a> 
+        <a href="https://www.instagram.com/mystery__drink/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a> 
+    </div>
+
+    <div class="encabezado">
+        <br><br><h6>Ⓒ 2024. MisteryDrink. Reservados todos los derechos mx | prod | 5921c999edda20d9a7ca637474539d734862014e | 16/10/2024-21:26:50:20
+        </h6>
+    </div>
+
+
+    <script>
+        // JavaScript para mostrar u ocultar la información adicional
+        const toggleInfoLinks = document.querySelectorAll('.toggle-info');
+        toggleInfoLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const moreInfo = link.nextElementSibling; // El div .more-info
+                moreInfo.style.display = (moreInfo.style.display === "none" || moreInfo.style.display === "") ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

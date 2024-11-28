@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - MisteryDrink</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <a href="index.html" class="logo">MisteryDrink</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu" class="menu-icono">
+                    <img src="imagenes/menu.png" alt="Ícono de menú" class="menu-icono">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="menu.html">Bebidas</a></li>
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <img src="imagenes/49588304-ilustración-de-compras-bolsa-de-icon-vector.svg" id="img-carrito" alt="Carrito de Compras">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th>Acción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <div class="carrito-buttons">
+                                    <a href="compra.html" id="finalizar-compra">Finalizar Compra</a>
+                                    <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes/halloween.jpeg" alt="Trago del terror">
+            </div>
+            <div class="ofert-txt">
+                <h3>Trago del terror</h3>
+                <a href="" class="">Informacion</a>
+                <button class="add-to-cart" data-name="Trago del terror" data-price="70" data-image="imagenes/halloween.jpeg">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes/invierno.jpeg" alt="Sueño navideño">
+            </div>
+            <div class="ofert-txt">
+                <h3>Sueño navideño</h3>
+                <a href="" class="">Informacion</a>
+                <button class="add-to-cart" data-name="Sueño navideño" data-price="80" data-image="imagenes/invierno.jpeg">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imagenes/muerte.jpeg" alt="Ofrenda del sabor">
+            </div>
+            <div class="ofert-txt">
+                <h3>Ofrenda del sabor</h3>
+                <a href="" class="">Informacion</a>
+                <button class="add-to-cart" data-name="Ofrenda del sabor" data-price="75" data-image="imagenes/muerte.jpeg">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MisteryDrink</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <header>
+        <h1>Tu Carrito de Compras</h1>
+    </header>
+
+    <main>
+        <table id="tabla-checkout">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="finalizar-compra">Finalizar Compra</button>
+
+        <div id="confirmacion-compra" class="hidden">
+            <h2>¡Gracias por tu compra!</h2>
+            <p>Tu envío se enviará pronto.</p>
+        </div>
+
+    </main>
+
+    <script src="compra.js"></script>
+</body>
+</html>

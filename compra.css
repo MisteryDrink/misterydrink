@@ -1,0 +1,85 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Contenedor de la tabla */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#tabla-checkout {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#tabla-checkout th, #tabla-checkout td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabla-checkout td img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Mostrar el total de la compra */
+#total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botón de Finalizar Compra */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Estilo para el mensaje de confirmación */
+#confirmacion-compra {
+    margin-top: 20px;
+    background-color: #e6f7e6;
+    padding: 20px;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    color: #28a745;
+}
+
+#confirmacion-compra.hidden {
+    display: none;
+}

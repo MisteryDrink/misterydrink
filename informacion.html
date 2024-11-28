@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos, exclusivas y novedades</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="informacion.css">
+</head>
+
+<body>
+
+    <header class="header2">
+        <a href="index.html" class="logo" style="color: white;">MisteryDrink</a>
+        <div class="menu">
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="menu-icono">
+                <img src="imagenes/menu.png" alt="Ícono de menú" class="menu-icono">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="menu.html">Bebidas</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </nav>            
+        </div>
+
+        <div class="header2-content">
+            <h1>Eventos, exclusivas y novedades</h1>
+        </div>
+    </header>
+    <main class="main">
+
+        <main class="main">
+            <!-- Sección Carrusel de Imágenes -->
+            <section class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="imagenes/Banner inauguracion restaurant los mejores tequeños azul oscuro.png" alt="Imagen 1">
+                        <img src="imagenes/Banner web horizontal promoción 2x1 minimalista y delicado rosa pastel y blanco.png" alt="Imagen 2">
+                        <img src="imagenes/Banner Horizontal Promoción de Crepas Profesional Azul.png" alt="Imagen 3">
+                    </div>
+                </div>
+            </section>
+
+        <section class="faq-container">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Encuentra respuestas a las preguntas más comunes sobre nuestras bebidas de temporada y festividades.</p>
+            <ul>
+                <li><strong>¿Cuáles son las bebidas de temporada disponibles?</strong> Nuestras bebidas de temporada varían a lo largo del año. Visita nuestra página de bebidas para ver las opciones actuales.</li>
+                <li><strong>¿Cómo puedo ordenar bebidas para eventos especiales?</strong> Puedes contactar a nuestro equipo de eventos a través de la sección de contáctanos para más información sobre pedidos especiales.</li>
+                <li><strong>¿Ofrecen opciones sin alcohol?</strong> Sí, ofrecemos una variedad de bebidas sin alcohol que pueden ser disfrutadas por todos.</li>
+<li><strong>¿Tienen opciones para personas con alergias?</strong> Actualmente no contamos con opciones específicas para alergias, pero si nos informas sobre tus alergias, estaremos encantados de ofrecerte una versión modificada de nuestras bebidas para adaptarlas a tus necesidades.</li>
+            </ul>
+        </section>
+
+        <section class="contact-container">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta, sugerencia o comentario, ¡no dudes en escribirnos!</p>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit" class="submit-btn">Enviar mensaje</button><br>
+            </form>
+            <p id="responseMessage" style="display:none;"></p>
+        </section>
+    </main>
+    
+    <nav class="navbar-custom">
+        <div class="navbar-container">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Trabajo.html">Trabaja con nosotros</a></li>
+                            <li><a href="Historia.html">Historia de MisteryDrink</a></li>
+                            <li><a href="Mapa.html">Mapa del sitio</a></li>
+                            <li><a href="Boletin.html">Boletines</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Atención al cliente <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="contactanos.html">Contáctanos</a></li>
+                            <li><a href="Facturas.html">Facturas Electrónicas</a></li>
+                            <li><a href="Formasdecomprar.html">Formas de comprar</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Secciones legales e informativas <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Accesibilidad.html">Accesibilidad Web</a></li>
+                            <li><a href="Aviso.html">Aviso de Privacidad</a></li>
+                            <li><a href="Condicion.html">Condiciones de uso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ayuda">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    <div class="social-icon-wrapper">
+        <a href="https://www.facebook.com/share/12DMh3Wc31R/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=misteryatenccion@gmail.com&su=atencion al cliente&body=Esto%20es%20una%20prueba" target="_blank" class="social-icon"><i class="fab fa-google"></i></a> 
+        <a href="https://www.instagram.com/mystery__drink/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a> 
+    </div>
+    
+    <div class="encabezado">
+        <h6>Ⓒ 2024. MisteryDrink. Todos los derechos reservados.</h6>
+    </div>
+
+    <script src="atencion.js"></script>
+</body>
+</html>

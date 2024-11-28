@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header class="header">
+    <div class="logo">
+        <img src="imagenes/WhatsApp Image 2024-11-06 at 10.58.01.png" alt="Logo">
+    </div>
+
+    <div class="menu">
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-icono">
+            <img src="imagenes/menu.png" class="menu-icono" alt="">
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="menu.html">Bebidas</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+
+            </ul>
+        </nav>            
+    </div>
+
+    <div class="header-content">
+        <h1>MisteryDrink</h1>
+        <p>
+            Bienvenidos a MisteryDrink, donde cada sorbo es una celebración de la naturaleza
+            y la cultura. Nos especializamos en crear bebidas innovadoras que capturan la 
+            esencia de cada estación y festividad del año.
+        </p>
+        <div class="button-container">
+            <button onclick="location.href='iniciosecion.html'" class="btn btn-1">Inicia sesión</button>
+            <button onclick="location.href='crear.html'" class="btn btn-2">Crea una cuenta</button>
+        </div>
+    </div>
+</header>
+
+
+
+    <section class="drink">
+        <img class="drink-img" src="imagenes/bg2.png" alt="">
+
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chat-header">
+                <h3>¡Hola! ¿Cómo puedo ayudarte hoy?</h3>
+                <button class="close-button" onclick="closeChat()">X</button>
+            </div>
+            <div id="chatbox" class="chatbox"></div>
+            <div class="initial-options">
+                <button>Recomiéndame una bebida caliente</button>
+                <button>Recomiéndame una bebida fría</button>
+                <button>Recomiéndame una bebida según el clima</button>
+            </div>
+            <div id="location-input" class="location-input" style="display: none;">
+                <input type="text" id="user-city" placeholder="Ingresa tu ciudad..." />
+                <button>Enviar</button>
+            </div>
+            <div id="user-input-container" class="user-input-container" style="display: none;">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje..." disabled />
+                <button disabled>Enviar</button>
+            </div>
+            <div class="recommendations" style="display: none;">
+                <p id="recommendation-text"></p>
+                <button onclick="showInitialOptions()">Regresar a opciones</button>
+            </div>
+        </div>
+        <div id="chatbot-bubble" class="chatbot-bubble" onclick="openChat()">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        
+        
+        <div class="drink-content container">
+            <h2>Nuestras Bebidas</h2>
+            <p class="txt-p">
+                En MisteryDrink, creemos que cada bebida cuenta una historia. Nos apasiona explorar
+                 la rica diversidad de sabores y tradiciones que ofrecen las estaciones y festividades,
+                  y cada una de nuestras creaciones es el resultado de un cuidadoso proceso de 
+                  investigación y experimentación.
+            </p>
+            
+            <div class="drink-group">
+                <div class="drink-1">
+                    <img src="imagenes/halloween.jpeg" alt="">
+                    <br><h3>Trago del Terror</h3>
+                    <p><br>
+                        Cada sorbo del Trago del Terror es una experiencia única que evoca la esencia 
+                        del otoño y el misterio de Halloween. 
+                    </p>
+                </div>
+            
+                <div class="drink-1"> 
+                    <img src="imagenes/muerte.jpeg" alt="">
+                    <br><h3>Ofrenda del Sabor</h3>
+                    <p><br>
+                        Cada sorbo de esta bebida es una celebración de la vida y el recuerdo, 
+                        ofreciendo una experiencia reconfortante y nostálgica que captura la esencia 
+                        de esta hermosa festividad.
+                    </p>
+                </div>
+                
+                <div class="drink-1"> 
+                    <img src="imagenes/invierno.jpeg" alt="">
+                    <br><h3>Sueño navideño</h3>
+                    <p><br>
+                        Perfecta para los fríos días de invierno, esta bebida es un abrazo para el 
+                        alma que evoca la magia de la temporada navideña. 
+                    </p>
+                </div>
+            </div>
+            
+            <a href="iniciosecion.html" class="btn-1">Comprar bebidas</a>
+        </div>
+
+    </section>
+
+    <main class="services">
+        
+        <div class="services-content conteiner">
+
+            <h2>Drink Store Services</h2>
+
+            <div class="services-group">
+                <style>
+                    .services-group img 
+                    {
+                        width: 60px;  
+                        height: 60px; 
+                        object-fit: cover; 
+                    }
+                </style>
+                <div class="services-1">
+                    <img src="imagenes/cal.png" alt="">
+                    <h3>Bebidas calientes</h3>
+                </div>
+                <div class="services-1">
+                    <img src="imagenes/fria.png" alt="">
+                    <h3>Bebidas frias</h3>
+                </div>
+
+            </div>
+            <p>
+                Desde eventos especiales hasta momentos de disfrute personal, nuestras bebidas son la elección perfecta 
+                para hacer que cada ocasión sea inolvidable. Porque en MisteryDrink, no se trata solo de servir, sino de crear 
+                experiencias que se quedarán contigo para siempre.
+            </p><br>
+            <a href="services.html" class="btn-1">Informacion de servicios</a>
+        </div>
+    </main>
+    <section class="general">
+        <div class="general-1">
+            <h2>Nuestro Menú</h2>
+            <p>
+                Descubre nuestro menú exclusivo de MisteryDrink, donde cada bebida está diseñada para capturar la esencia de las estaciones y festividades del año. Explora nuestras creaciones y déjate sorprender por sabores únicos que te transportarán a momentos inolvidables. ¡Haz clic y encuentra tu próxima bebida favorita!
+            </p> 
+            <a href="carta.html" class="btn-1">Informacion</a>
+        </div>
+        <div class="general-2"></div>
+    </section>
+    
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>Promociones</h2>
+            <p>
+                ¡No te pierdas nuestras promociones exclusivas en MisteryDrink! Aquí encontrarás ofertas especiales y descuentos únicos para que disfrutes de nuestras innovadoras bebidas a un precio increíble. Mantente al tanto de las novedades y aprovecha cada oportunidad para saborear algo nuevo. ¡Explora nuestras promociones ahora!
+            </p> 
+            <a href="promociones.html" class="btn-1">Informacion</a>
+        </div>
+    </section>
+
+    <section class="blog container">
+        <h2>
+            Eventos, exclusivas y novedades
+        </h2><br>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="imagenes/blog1.jpg"alt="">
+                <h3>Eventos y Celebraciones</h3>
+                <p>
+                    Te invitamos a descubrir los eventos locales y lanzamientos exclusivos que hemos preparado para ti a lo largo del año. Cada ocasión es una oportunidad para celebrar la creatividad y el sabor con nuestras innovadoras bebidas.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="imagenes/blog2.jpg"alt="">
+                <h3>Preguntas frecuentes</h3>
+                <p>
+                    Encuentra las respuestas a las preguntas más comunes de nuestros clientes y asegúrate de disfrutar al máximo de nuestras deliciosas bebidas. En MisteryDrink, nos dedicamos a ofrecerte una experiencia excepcional.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="imagenes/blog3.jpg"alt="">
+                <h3>¡Queremos Escucharte!</h3>
+                <p>
+                    En MisteryDrink, valoramos mucho la opinión de nuestros clientes. Queremos que tu experiencia con nuestras bebidas sea excepcional y, para lograrlo, es importante saber qué piensas.
+                </p>
+            </div>
+        </div>
+
+        <a href="informacion.html" class="btn-1">Informacion</a>
+    </section>
+
+<div id="toast" class="toast"></div>
+
+<div class="aviso-cookies" id="aviso-cookies">
+        <img class="galleta" src="imagenes/cookie.svg" alt="galleta">
+        <h3 class="Titulo">galleta?</h3>
+        <p class="parrafo">Iniciar experiencia.</p>
+        <button class="boton" id="btn-aceptar-cookies">ñamñam</button>
+        <a class="enlace" href="#">Felicidad</a>
+</div>
+<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+<div class="navbar-custom">
+    <nav class="navbar-container">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Sobre nosotros <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Trabajo.html">Trabaja con nosotros</a></li>
+                            <li><a href="Historia.html">Historia de MisteryDrink</a></li>
+                            <li><a href="Mapa.html">Mapa del sitio</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Atención al cliente <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="contactanos.html">Contáctanos</a></li>
+                            <li><a href="Facturas.html">Facturas Electrónicas</a></li>
+                            <li><a href="Formasdecomprar.html">Formas de comprar</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Secciones legales e informativas <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="Accesibilidad.html">Accesibilidad Web</a></li>
+                            <li><a href="Aviso.html">Aviso de Privacidad</a></li>
+                            <li><a href="Condicion.html">Condiciones de uso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+</div>
+    </nav>
+    <div class="ayuda">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <div class="social-icon-wrapper">
+        <a href="https://www.facebook.com/share/12DMh3Wc31R/" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+        </a>        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=misteryatenccion@gmail.com&su=atencion al cliente&body=Esto%20es%20una%20prueba" target="_blank" class="social-icon">
+            <i class="fab fa-google"></i>
+        </a> 
+        <a href="https://www.instagram.com/mystery__drink/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a> 
+    </div>
+<div class="encabezado">
+    <br><br><h6>Ⓒ 2024. MisteryDrink. Reservados todos los derechos mx | prod | 5921c999edda20d9a7ca637474539d734862014e | 16/10/2024-21:26:50:20
+    </h6>
+</div>
+
+<script src="bot.js"></script>
+<script src="cookies.js"></script>
+
+</body>
+</html>

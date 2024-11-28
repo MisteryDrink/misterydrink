@@ -1,0 +1,210 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    background-color: #F5F5F5;
+    padding: 70px 0;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+.logo {
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    font-size: 15px;
+    padding: 15px 20px;
+    color: #111111;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+}
+
+.submenu {
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.carrito-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carrito-buttons a {
+    background-color: #111111;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    flex: 1;
+    margin: 5px;
+}
+
+.carrito-buttons a:hover {
+    background-color: #333333;
+}
+
+.add-to-cart {
+    background-color: #111111;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #333333;
+}
+
+.ofert {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.ofert-1 {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ofert-img {
+    margin-bottom: 10px;
+}
+
+.ofert-txt h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#carrito {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#img-carrito {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para el carrito */
+#lista-carrito th, #lista-carrito td {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#lista-carrito img {
+    width: 40px;
+    height: auto;
+}
+
+#carrito .carrito-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#carrito .carrito-buttons a {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+#carrito .carrito-buttons a:hover {
+    background-color: #0056b3;
+}

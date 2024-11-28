@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@;0,400;0,500;0,600;0,700;0,800;&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body 
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container
+{
+max-width: 1200 px;
+margin: 0 auto;
+}
+
+
+
+.menu
+{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+    
+}
+
+.logo
+{
+color: #fffdff;
+font-size: 25px;
+font-weight: 800;
+}
+
+.menu  .navbar ul li
+{
+position: relative;
+float: left;
+}
+
+.menu  .navbar ul li
+{
+font-size: 18px;
+padding: 20px;
+color: #fffdff;
+display: block;
+font-weight: 600;
+}
+
+
+.menu .navbar ul li a:hover
+{
+    color: #ce967b;
+}
+
+#menu 
+{
+display: none;
+}
+
+.menu-icono 
+{
+    width: 25px;
+}
+
+.menu label 
+{
+    cursor:pointer;
+    display: none;
+}
+
+.header-content {
+    text-align:center;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(106, 106, 106, 0.19),
+        rgba(106, 106, 106, 0.195)
+    ), url(imagenes/montes_morados.jpeg);
+    background-position: center 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.header1 {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), 
+        url(imagenes/montes_morados.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.header-content {
+    text-align:center;
+}
+
+.header-content h1 {
+    font-size:45px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.header-content {
+    max-width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.header-content p 
+{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+
+.btn-1 
+{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967B;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover
+{
+    background-color: #ebad8d;
+}
+
+.drink img 
+{
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover; 
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px; 
+    height: auto;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto; 
+    max-width: 100%; 
+    object-fit: contain; 
+}
+
+a:visited {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.logo {
+    color: rgb(214, 214, 214); /* Cambia el color del texto a blanco */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.social-icon-wrapper{
+    color:#c5c5c5;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 10px;              
+    padding: 10px;
+}
+
+.navbar-custom{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.social-icon-wrapper{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.ayuda{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100px;            /* Asegura que el contenedor tenga una altura */
+}
+
+.encabezado h6 {
+    margin: 0;
+    padding: 0;
+    color: #c5c5c5;           /* Color del texto */
+}
+
+
+.navbar-container {
+    padding: 15px 100px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra todo el contenido */
+    align-items: center;
+    max-width: 1200px;       /* Asegura que el contenedor tenga un ancho máximo */
+    margin: 0 auto;          /* Centra el contenedor dentro de la página */
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Asegura que los elementos estén centrados */
+    flex-grow: 1;            /* Permite que los ítems crezcan y ocupen el espacio disponible */
+    position: relative;
+}
+
+.navbar-nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar-nav a:hover {
+    color: #ce967b;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3f4041;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 18px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.navbar-nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 15px 0;
+}
+
+.sub-menu a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.sub-menu a:hover {
+    color: #ce967b;
+}
+
+.social-icon {
+    color: #c5c5c5; /* Cambia esto al color que desees para los íconos sociales */
+}
+
+/*FIN*/ 
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para main */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos para la sección de atención a clientes */
+.atencion-clientes {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.atencion-clientes h2 {
+    font-size: 1.8rem;
+    color: #803fc0;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.atencion-clientes h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.atencion-clientes p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.atencion-clientes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.atencion-clientes ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Enlace del correo */
+.atencion-clientes a {
+    color: #803fc0;
+    text-decoration: none;
+}
+
+.atencion-clientes a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el aviso de privacidad */
+.atencion-clientes em {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilos para el footer y redes sociales */
+.social-icon-wrapper {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #803fc0;
+}
+
+/* Asegurarse de que todos los íconos de FontAwesome sean blancos */
+.social-icon i.fab {
+    color: white !important;
+}
+
+
+.encabezado {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+}
+
+/* Asegura que el cuadro de texto en <main> esté arriba */
+.main-content {
+    margin-top: 20px; /* Ajusta el margen superior si necesitas más espacio */
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Centrar el cuadro y agregar separación arriba */
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Asegura que se quede en su lugar */
+    z-index: 10; /* Coloca el cuadro por encima de otros elementos */
+}
+
+/* Si tienes una imagen de fondo en el índice, asegúrate de que no se superponga */
+.header-content {
+    background-image: url("ruta/de/tu/imagen.jpg"); /* Asegúrate de colocar la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Añade relleno para que el contenido esté centrado */
+}
+
+.header-content h1 {
+    color: white; /* Ajusta el color del texto si se solapa con la imagen */
+}
