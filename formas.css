@@ -103,7 +103,7 @@ display: none;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-    ), url(imagenes/fondop.jpeg);
+    ), url(fondop.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@ display: none;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)), 
-        url(imagenes/fondop.jpeg);
+        url(fondop.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
