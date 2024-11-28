@@ -16,7 +16,7 @@ header {
     font-size: 2rem;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 30px auto;
     padding: 0 15px;
 }
@@ -204,7 +204,7 @@ display: none;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
-    ), url(imagenes/promociones_de_bebidas_no_realistas.jpeg);
+    ), url(promociones_de_bebidas_no_realistas.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -237,7 +237,7 @@ display: none;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)), 
-        url(imagenes/promociones_de_bebidas_no_realistas.jpeg);
+        url(promociones_de_bebidas_no_realistas.jpeg);
     background-position: center 65%;
     background-repeat: no-repeat;
     background-size: cover;
