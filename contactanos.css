@@ -103,7 +103,7 @@ display: none;
     background-image: linear-gradient(
         rgba(106, 106, 106, 0.19),
         rgba(106, 106, 106, 0.195)
-    ), url(imagenes/montes_morados.jpeg);
+    ), url(montes_morados.jpeg);
     background-position: center 65%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +117,7 @@ display: none;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)), 
-        url(imagenes/montes_morados.jpeg);
+        url(montes_morados.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
