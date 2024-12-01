@@ -927,153 +927,199 @@ p {
     font-size: 20px; /* Tamaño del icono */
 }
 
-/* Estilos para pantallas pequeñas (móviles, hasta 768px) */
-@media (max-width: 768px) {
-    /* Ajustar el tamaño de las fuentes para que se vea bien en móviles */
-    body {
-        font-size: 14px;
+@media(max-width: 991px) {
+
+    /* Menú */
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+        font-size: 24px;
+        color: #fffdff;
+        cursor: pointer;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #fff;
+    }
+
+    .menu .navbar ul li a {
+        color: #fff;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #ce967b;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    /* Header */
+    .header {
+        min-height: 0vh;
+        background-size: cover;
+    }
+
+    .header-content {
+        padding: 100px 30px;
     }
 
     .header-content h1 {
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 20px;
     }
 
     .header-content p {
         font-size: 14px;
+        margin-bottom: 15px;
+        padding: 0;
     }
 
     .button-container {
-        text-align: center; 
+        margin-top: 20px;
     }
 
-    .btn, .btn-1 {
-        width: 100%; /* Hacer los botones más grandes en móviles */
-        padding: 15px 20px;
+    /* Drink */
+    .drink {
+        padding: 30px 15px;
     }
 
-    /* Ajustes para la barra de navegación */
-    .navbar-nav {
-        display: block; /* Para apilar los elementos de la navegación */
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar-nav li {
-        margin-bottom: 10px; /* Separar los elementos de la navegación */
-    }
-
-    /* Ajustar el header */
-    .header {
-        min-height: 50vh;
-    }
-
-    .logo {
-        width: 60px; /* Ajustar el tamaño del logo */
-    }
-
-    /* Ajustar el contenido de las bebidas */
     .drink-content h2 {
-        font-size: 28px;
-        line-height: 40px;
-        padding: 0 30px;
+        padding: 0;
+        font-size: 35px;
     }
 
     .txt-p {
-        font-size: 14px;
-        padding: 0 30px;
+        padding: 0;
+        margin-bottom: 15px;
     }
 
     .drink-group {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 15px;
+        margin-bottom: 0;
     }
 
-    .drink-1 {
-        width: 100%; /* Asegurarse de que las imágenes y contenidos se adapten al móvil */
-        margin-bottom: 20px;
+    .drink-img {
+        display: none;
     }
 
-    /* Ajustes para el footer */
+    /* Services */
     .services {
-        padding: 40px 20px;
+        padding: 30px 15px;
     }
 
-    .services-content h2 {
-        font-size: 30px;
-        line-height: 40px;
+    .services-content p {
+        padding: 0;
+        font-size: 14px;
     }
 
-    .blog-content {
+    .services-group {
         flex-direction: column;
-        text-align: center;
+        gap: 30px;
+        margin-bottom: 0;
     }
 
-    .blog-1 {
-        width: 100%;
-        padding: 10px;
+    .services-1 {
+        margin-bottom: 25px;
     }
 
-    /* Ajustar la barra lateral y el chat */
-    .chatbot-window {
-        width: 100%;
-        bottom: 80px;
-        right: 10px;
-    }
-
-    #chatbot-bubble {
-        bottom: 80px;
-        right: 10px;
-        padding: 10px; /* Ajustar el tamaño de la burbuja */
-    }
-
+    /* General */
     .general {
         flex-direction: column;
     }
 
-    .general-1, .general-2, .general-3 {
+    .general-1 {
         width: 100%;
-    }
-
-    /* Ajustes para el aviso de cookies */
-    .aviso-cookies {
-        width: 100%;
-        padding: 15px;
-        position: fixed;
-        bottom: 10px;
-        left: 10px;
-        max-width: 100%;
-        box-shadow: none;
-    }
-
-    /* Ajustes de las redes sociales */
-    .social-icon-wrapper {
+        padding: 30px;
         text-align: center;
+    }
+
+    .general-2, .general-3 {
+        display: none;
+    }
+
+    /* Blog */
+    .blog {
+        padding: 30px 15px;
+    }
+
+    .blog-content {
+        flex-direction: column;
+    }
+
+    .blog-1,
+    .blog-2,
+    .blog-3 {
+        padding: 0;
+    }
+
+    .blog-1 img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+
+    .blog-1 h3 {
+        font-size: 22px;
+        color: #323337;
+    }
+
+    /* Chatbot */
+    #chatbot-bubble {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
         padding: 10px;
-        background-color: #000;
     }
 
-    .social-icon {
-        margin: 0 5px;
-        font-size: 1.5rem;
+    .chatbot-window {
+        width: 90%;
+        max-width: 350px;
+        bottom: 90px;
+        right: 10px;
+        padding: 10px;
+        height: 80vh;
     }
 
-    /* Mejorar la visibilidad de los botones del chatbot */
-    .chat-header {
-        font-size: 14px;
-        padding: 5px;
+    .chat-header h3 {
+        font-size: 16px;
     }
 
     .chatbox {
-        font-size: 14px;
+        max-height: 60vh;
+        padding: 5px;
     }
 
-    /* Ajustes adicionales */
-    .drink-img {
-        width: 100%;
-        height: auto;
+    .user-input-container input {
+        padding: 8px;
     }
-}
 
+    .user-input-container button {
+        padding: 8px;
+    }
 }
