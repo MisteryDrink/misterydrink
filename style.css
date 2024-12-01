@@ -927,109 +927,153 @@ p {
     font-size: 20px; /* Tamaño del icono */
 }
 
-
-@media(max-width:991px) {
-
-    .menu {
-        padding: 30px;
+/* Estilos para pantallas pequeñas (móviles, hasta 768px) */
+@media (max-width: 768px) {
+    /* Ajustar el tamaño de las fuentes para que se vea bien en móviles */
+    body {
+        font-size: 14px;
     }
 
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #323337;
-        display: none;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-
-    .header {
-        min-height: 0vh;
-    }
-
-    .header-content{
-        padding: 100px 30px;
+    .header-content h1 {
+        font-size: 32px;
+        line-height: 48px;
     }
 
     .header-content p {
-        padding: 0;
+        font-size: 14px;
     }
 
-    .drink {
-        padding: 30px;
+    .button-container {
+        text-align: center; 
     }
 
+    .btn, .btn-1 {
+        width: 100%; /* Hacer los botones más grandes en móviles */
+        padding: 15px 20px;
+    }
+
+    /* Ajustes para la barra de navegación */
+    .navbar-nav {
+        display: block; /* Para apilar los elementos de la navegación */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 10px; /* Separar los elementos de la navegación */
+    }
+
+    /* Ajustar el header */
+    .header {
+        min-height: 50vh;
+    }
+
+    .logo {
+        width: 60px; /* Ajustar el tamaño del logo */
+    }
+
+    /* Ajustar el contenido de las bebidas */
     .drink-content h2 {
-        padding: 0;
+        font-size: 28px;
+        line-height: 40px;
+        padding: 0 30px;
     }
 
     .txt-p {
-        padding: 0;
+        font-size: 14px;
+        padding: 0 30px;
     }
 
     .drink-group {
         flex-direction: column;
-        margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
     }
 
-    .drink-img {
-        display: none;
+    .drink-1 {
+        width: 100%; /* Asegurarse de que las imágenes y contenidos se adapten al móvil */
+        margin-bottom: 20px;
     }
 
-    .services{
-        padding: 30px;
+    /* Ajustes para el footer */
+    .services {
+        padding: 40px 20px;
     }
 
-    .services-content p {
-        padding: 0;
+    .services-content h2 {
+        font-size: 30px;
+        line-height: 40px;
     }
 
-    .services-group {
+    .blog-content {
         flex-direction: column;
-        margin-bottom: 0;
+        text-align: center;
     }
 
-    .services-1{
-        margin-bottom: 25px;
+    .blog-1 {
+        width: 100%;
+        padding: 10px;
     }
 
+    /* Ajustar la barra lateral y el chat */
+    .chatbot-window {
+        width: 100%;
+        bottom: 80px;
+        right: 10px;
+    }
+
+    #chatbot-bubble {
+        bottom: 80px;
+        right: 10px;
+        padding: 10px; /* Ajustar el tamaño de la burbuja */
+    }
 
     .general {
         flex-direction: column;
     }
 
-    .general-1 {
+    .general-1, .general-2, .general-3 {
         width: 100%;
-        padding: 30px;
+    }
+
+    /* Ajustes para el aviso de cookies */
+    .aviso-cookies {
+        width: 100%;
+        padding: 15px;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    /* Ajustes de las redes sociales */
+    .social-icon-wrapper {
         text-align: center;
+        padding: 10px;
+        background-color: #000;
     }
 
-    .general-2, .general-3 {
-        display: none;
+    .social-icon {
+        margin: 0 5px;
+        font-size: 1.5rem;
     }
 
-    .blog {
-        padding: 30px;
+    /* Mejorar la visibilidad de los botones del chatbot */
+    .chat-header {
+        font-size: 14px;
+        padding: 5px;
     }
 
-    .blog-content {
-        flex-direction: column;
+    .chatbox {
+        font-size: 14px;
     }
 
-    .blog-1,.blog-2,.blog-3{
-        padding: 0;
+    /* Ajustes adicionales */
+    .drink-img {
+        width: 100%;
+        height: auto;
     }
+}
 
 }
